@@ -27,10 +27,8 @@ public class Main {
 
 
         List<WordOccurance> list = new ArrayList<>(Task.findOccurance(words));
-
-        for (WordOccurance entity : list){
-            System.out.println("{name: " + entity.getName() + ", occurrence: " + entity.getOccurance() + "}");
-        }
+        
+            System.out.println(list);
     }
 
 

@@ -22,4 +22,12 @@ public class WordOccurance {
     public void setOccurance(int occurance) {
         this.occurance = occurance;
     }
+
+    @Override
+    public String toString() {
+        return "\n{" +
+                "name = '" + name + '\'' +
+                ", occurance = " + occurance +
+                '}';
+    }
 }
