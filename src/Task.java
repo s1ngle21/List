@@ -39,13 +39,13 @@ public class Task {
     які можуть повторюватися в необмеженій кількості. Необхідно повернути новий числовий список, що містить тільки унікальні числа. */
 
     public static List<Integer> findUnique(List<Integer> numbers) {
-        List<Integer> uniqList = new ArrayList<>();
+        List<Integer> uniqNumbers = new ArrayList<>();
         for (Integer number : numbers) {
-            if (!uniqList.contains(number)) {
-                uniqList.add(number);
+            if (!uniqNumbers.contains(number)) {
+                uniqNumbers.add(number);
             }
         }
-        return uniqList;
+        return uniqNumbers;
     }
 
 
