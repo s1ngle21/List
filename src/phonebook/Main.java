@@ -1,4 +1,4 @@
-package phoneBook;
+package phonebook;
 
 import java.util.List;
 

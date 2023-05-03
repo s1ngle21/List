@@ -1,7 +1,8 @@
-package phoneBook;
+package phonebook;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class PhoneBook {
     private List<Record> records;
@@ -11,10 +12,12 @@ public class PhoneBook {
     }
 
     public void add(Record record) {
+        Objects.requireNonNull(record);
         records.add(record);
     }
 
     public Record find(String name) {
+        Objects.requireNonNull(name);
         for (Record record : records) {
             if (record.getName().equals(name)) {
                 return record;
@@ -30,10 +33,6 @@ public class PhoneBook {
                 recordsRes.add(record);
             }
         }
-        if (records.isEmpty()){
-            return null;
-        }else {
-            return recordsRes;
-        }
+        return records.isEmpty() ? null : recordsRes;
     }
 }

@@ -1,4 +1,4 @@
-package phoneBook;
+package phonebook;
 
 public class Record {
     private String name;
